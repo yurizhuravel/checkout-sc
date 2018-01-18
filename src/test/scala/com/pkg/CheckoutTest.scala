@@ -1,14 +1,13 @@
 package com.pkg
 
 import org.scalatest.FunSuite
-import org.scalatest.BeforeAndAfter
 import scala.util.Random
 
-class CheckoutTest extends FunSuite with BeforeAndAfter {
+class CheckoutTest extends FunSuite {
 
   val validInput = Seq("A", "B", "C", "D")
   val random = new Random
-  val randomValidInput = validInput(random.nextInt(validInput.length))
+  val randomValidInput: String = validInput(random.nextInt(validInput.length))
   val sampleCart = Vector[String]("A", "A", "B")
 
   test("Validates user input against pricing file") {
