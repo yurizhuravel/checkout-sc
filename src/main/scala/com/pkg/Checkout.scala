@@ -37,7 +37,7 @@ object Checkout {
       println(s"Items scanned: ${shoppingCart.mkString}. Total: $total")
       userInput = readLine(userPrompt).capitalize
     }
-    System.exit(1)
+    System.exit(0)
   }
 
 }
